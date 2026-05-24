@@ -10,7 +10,7 @@
  * See README.md for step-by-step instructions.
  */
 
-const FORM_ENDPOINT = 'REPLACE_WITH_ZAPIER_WEBHOOK_URL';
+const FORM_ENDPOINT = 'https://hooks.zapier.com/hooks/catch/25286681/4oljalc/';
 
 // ─── DOM REFS ────────────────────────────────────────────────
 const form       = document.getElementById('leadForm');
