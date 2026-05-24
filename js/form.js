@@ -126,13 +126,14 @@ form.addEventListener('submit', async (e) => {
       return;
     }
 
-    const res = await fetch(FORM_ENDPOINT, {
-      method:  'POST',
+    // no-cors bypasses the CORS preflight that Zapier webhooks block;
+    // the response is opaque but the request reaches Zapier successfully.
+    await fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      mode:   'no-cors',
       headers: { 'Content-Type': 'application/json' },
       body:    JSON.stringify(payload),
     });
-
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     showSuccess();
 
