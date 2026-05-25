@@ -105,46 +105,48 @@ section { padding: 80px 0; }
   max-width: 640px;
 }
 
-/* animated SVG progression */
+/* Progression pills */
 .hero__visual {
   display: flex;
   align-items: center;
-  gap: 16px;
-  margin-top: 8px;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
 }
 
-.progression-icon {
+.prog-pill {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 8px;
+  padding: 10px 18px;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   opacity: 0;
+  white-space: nowrap;
 }
-.progression-icon:nth-child(1) { animation: fadeUp 0.5s ease-out 0.4s forwards; }
-.progression-icon:nth-child(2) { animation: fadeUp 0.5s ease-out 0.7s forwards; }
-.progression-icon:nth-child(3) { animation: fadeUp 0.5s ease-out 1.0s forwards; }
+.prog-pill--pain  { background: rgba(220,38,38,0.15);  color: #f87171; animation: fadeUp 0.5s ease-out 0.3s forwards; }
+.prog-pill--scale { background: rgba(207,184,124,0.18); color: var(--gold); animation: fadeUp 0.5s ease-out 0.5s forwards; }
+.prog-pill--train { background: rgba(16,185,129,0.15);  color: #34d399; animation: fadeUp 0.5s ease-out 0.7s forwards; }
+
+.prog-pill__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.prog-pill__dot--red   { background: #ef4444; }
+.prog-pill__dot--gold  { background: var(--gold); }
+.prog-pill__dot--green { background: #10b981; }
 
 .prog-arrow {
-  font-size: 1.5rem;
-  color: var(--grey);
+  font-size: 1rem;
+  color: #555;
   opacity: 0;
-  animation: fadeUp 0.5s ease-out 0.55s forwards;
-  align-self: center;
-  margin-top: -16px;
+  animation: fadeUp 0.5s ease-out 0.4s forwards;
 }
-.prog-arrow:last-of-type { animation-delay: 0.85s; }
-
-.prog-svg {
-  width: 64px;
-  height: 64px;
-}
-
-.prog-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
+.prog-arrow:last-of-type { animation-delay: 0.6s; }
 
 /* ─── VALUE CARDS ─────────────────────────────────────────── */
 .value-section {

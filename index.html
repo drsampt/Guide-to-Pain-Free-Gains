@@ -27,49 +27,19 @@
 
       <!-- Progression visual -->
       <div class="hero__visual" aria-hidden="true">
-        <div class="progression-icon">
-          <svg class="prog-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="28" width="56" height="8" rx="4" fill="#CFB87C"/>
-            <rect x="0" y="20" width="10" height="24" rx="3" fill="#CFB87C"/>
-            <rect x="54" y="20" width="10" height="24" rx="3" fill="#CFB87C"/>
-            <rect x="10" y="24" width="8" height="16" rx="2" fill="#a89860"/>
-            <rect x="46" y="24" width="8" height="16" rx="2" fill="#a89860"/>
-            <!-- Pain X -->
-            <line x1="26" y1="8" x2="38" y2="20" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
-            <line x1="38" y1="8" x2="26" y2="20" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
-          </svg>
-          <span class="prog-label" style="color:#dc2626;font-size:0.7rem;">Pain</span>
+        <div class="prog-pill prog-pill--pain">
+          <span class="prog-pill__dot prog-pill__dot--red"></span>
+          Pain Shows Up
         </div>
-
         <span class="prog-arrow">→</span>
-
-        <div class="progression-icon">
-          <svg class="prog-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="31" width="56" height="8" rx="4" fill="#CFB87C"/>
-            <rect x="0" y="23" width="10" height="24" rx="3" fill="#CFB87C"/>
-            <rect x="54" y="23" width="10" height="24" rx="3" fill="#CFB87C"/>
-            <rect x="10" y="27" width="8" height="16" rx="2" fill="#a89860"/>
-            <rect x="46" y="27" width="8" height="16" rx="2" fill="#a89860"/>
-            <!-- Down arrow = scaling -->
-            <path d="M32 8 L32 22 M26 16 L32 22 L38 16" stroke="#CFB87C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span class="prog-label" style="color:#CFB87C;font-size:0.7rem;">Scale</span>
+        <div class="prog-pill prog-pill--scale">
+          <span class="prog-pill__dot prog-pill__dot--gold"></span>
+          Scale the Movement
         </div>
-
         <span class="prog-arrow">→</span>
-
-        <div class="progression-icon">
-          <svg class="prog-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="28" width="56" height="8" rx="4" fill="#CFB87C"/>
-            <rect x="0" y="20" width="10" height="24" rx="3" fill="#CFB87C"/>
-            <rect x="54" y="20" width="10" height="24" rx="3" fill="#CFB87C"/>
-            <rect x="10" y="24" width="8" height="16" rx="2" fill="#a89860"/>
-            <rect x="46" y="24" width="8" height="16" rx="2" fill="#a89860"/>
-            <!-- Checkmark -->
-            <circle cx="32" cy="14" r="10" fill="#10b981"/>
-            <path d="M26 14 L30 18 L38 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span class="prog-label" style="color:#10b981;font-size:0.7rem;">Keep Training</span>
+        <div class="prog-pill prog-pill--train">
+          <span class="prog-pill__dot prog-pill__dot--green"></span>
+          Keep Training
         </div>
       </div>
     </div>
